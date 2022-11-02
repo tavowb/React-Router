@@ -30,14 +30,12 @@ const SearchScreen = () => {
 
   const getCharacters = () => {
     if (inputValue.trim() !== "") {
-      console.log("if");
       const val = inputValue.toLocaleLowerCase();
       const character = Characters.filter((Characters) =>
         Characters.name.toLocaleLowerCase().includes(val)
       );
       setlCharacters(character);
     } else {
-      console.log("else");
       setlCharacters([]);
     }
   };
