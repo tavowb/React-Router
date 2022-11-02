@@ -1,100 +1,98 @@
 import React from "react";
-import { AiOutlineMail, AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { BsPhoneFill } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import { MdMail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="footer">
-        <div
-          className="  bg-primary bg-gradient text-white "
-          style={{ minHeight: "12rm" }}
-        >
-          <div className="container  pt-4 pb-4">
-            <div className="row ">
-              <div className="mb-2 d-line ps-4 d-flex align-items-start col-12">
-                <h5>Contacto</h5>
-              </div>
+    <footer className=" footer bg-primary text-white">
+      <div class="container">
+        <div class="row ">
+          <div class="col-xl-4 offset-xl-1 col-lg-2 col-md-6">
+            <div class="mt-3">
+              <h4>Email</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <div className="mb-2  ps-4 d-flex align-items-start">
+                    <MdMail className="me-2 mt-1"></MdMail>
+                    gustavojimenezdm@unimagdalena.edu.co
+                  </div>
+                </li>
+                <li>
+                  <div className="mb-2  ps-4 d-flex align-items-start">
+                    <SiGmail className="me-2 mt-1"></SiGmail>
+                    gusjim71@gmail.com
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <div className="row">
-              <div className="col-4">
-                <div className="mb-2 ps-4 d-flex align-items-start">
-                  <strong>Phone</strong>
-                </div>
-              </div>
-
-              <div className="col-4">
-                <div className="mb-2 d-line ps-4 d-flex align-items-start">
-                  <strong>Email</strong>
-                </div>
-              </div>
-
-              <div className="col-4">
-                <div className="mb-2 ps-4 d-flex align-items-start">
-                  <strong>Social</strong>
-                </div>
-              </div>
+          <div class="col-xl-3 col-lg-3 col-md-6">
+            <div className="mt-3">
+              <h4>Social</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <div className="mb-2 ps-4 d-flex align-items-start">
+                    <AiFillGithub className="me-2 mt-1"></AiFillGithub>
+                    <a href="https://github.com/tavowb" className="text-white">
+                      Gustavo Jimenez
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="mb-2 ps-4 d-flex align-items-start">
+                    <AiFillInstagram className="me-2 mt-1"></AiFillInstagram>
+                    <a
+                      href="https://www.instagram.com/morasouya/"
+                      className="text-white"
+                    >
+                      Gustavo Jimenez
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <div className="row">
-              <div className="col-4">
-                <div className="mb-2 ps-4 d-flex align-items-start">
-                  <BsPhoneFill className="me-2 mt-1"></BsPhoneFill>
-                  +57 3053058528
-                </div>
-              </div>
-
-              <div className="col-4">
-                <div className="mb-2 d-line ps-4 d-flex align-items-start">
-                  <SiGmail className="me-2 mt-1"></SiGmail>
-                  gusjim71@gmail.com
-                </div>
-              </div>
-
-              <div className="col-4">
-                <div className="mb-2 ps-4 d-flex align-items-start">
-                  <AiFillGithub className="me-2 mt-1"></AiFillGithub>
-                  <a href="https://github.com/tavowb" className="text-white">
-                    Gustavo Jimenez
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col-4">
-                <div className="mb-2 ps-4 d-flex align-items-start">
-                  <BsPhoneFill className="me-2 mt-1"></BsPhoneFill>
-                  +57 312 4341827
-                </div>
-              </div>
-
-              <div className="col-4">
-                <div className="mb-2 d-line ps-4 d-flex align-items-start">
-                  <MdMail className="me-2 mt-1"></MdMail>
-                  gustavojimenezdm@unimagdalena.edu.co
-                </div>
-              </div>
-
-              <div className="col-4">
-                <div className="mb-2 ps-4 d-flex align-items-start">
-                  <AiFillInstagram className="me-2 mt-1"></AiFillInstagram>
-                  <a
-                    href="https://www.instagram.com/morasouya/"
-                    className="text-white"
-                  >
-                    Gustavo Jimenez
-                  </a>
-                </div>
-              </div>
+          <div class="col-xl-3 col-lg-3 col-md-6">
+            <div className="mt-3">
+              <h4>Phone</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <div className=" mb-2 ps-4 d-flex align-items-start">
+                    <BsPhoneFill className=""></BsPhoneFill>
+                    +57 3053058528
+                  </div>
+                </li>
+                <li>
+                  <div className="mb-2 ps-4 d-flex align-items-start">
+                    <BsPhoneFill className=""></BsPhoneFill>
+                    +57 3124341827
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+
+        <div class="d-flex justify-content-center">
+          <div class="copyright">
+            <p>
+              Developed and maintained by:{" "}
+              <a
+                className="text-white"
+                href="https://www.instagram.com/morasouya/"
+              >
+                Gustavo Jimenez
+              </a>{" "}
+              &copy; {new Date().getFullYear()}{" "}
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 
