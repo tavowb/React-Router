@@ -10,6 +10,7 @@ const LoginRouter = () => {
     <Router>
       <Routes>
         <Route
+          end
           path="/login"
           element={
             <PublicRouter>
