@@ -18,7 +18,7 @@ const LoginScreen = (props) => {
   return (
     <div className="container mt-5 text-center">
       <img src="/assets/animate.gif" alt="animación" />
-      <h1 className="my-3">Login Screen</h1>
+      <h1 className="my-3">DB APP</h1>
       <button className="btn btn-primary" onClick={hadleLogin}>
         Login
       </button>

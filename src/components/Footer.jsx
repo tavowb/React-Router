@@ -2,7 +2,6 @@ import React from "react";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { BsPhoneFill } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
-import { MdMail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -15,7 +14,7 @@ const Footer = () => {
               <ul className="list-unstyled">
                 <li>
                   <div className="mb-2  ps-4 d-flex align-items-start">
-                    <MdMail className="me-2 mt-1"></MdMail>
+                    <SiGmail className="me-2 mt-1"></SiGmail>
                     gustavojimenezdm@unimagdalena.edu.co
                   </div>
                 </li>

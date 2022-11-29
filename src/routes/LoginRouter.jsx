@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import LoginScreen from "../pages/LoginScreen";
 import AppRouter from "./AppRouter";
 import PrivateRouter from "./PrivateRouter";
@@ -25,6 +30,14 @@ const LoginRouter = () => {
             <PrivateRouter>
               <AppRouter />
             </PrivateRouter>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <PublicRouter>
+              <Navigate to="/men" />
+            </PublicRouter>
           }
         />
       </Routes>
