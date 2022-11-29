@@ -32,14 +32,6 @@ const LoginRouter = () => {
             </PrivateRouter>
           }
         />
-        <Route
-          path="*"
-          element={
-            <PublicRouter>
-              <Navigate to="/men" />
-            </PublicRouter>
-          }
-        />
       </Routes>
     </Router>
   );
